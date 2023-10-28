@@ -2,17 +2,19 @@
 
 class MinhaClasse:
     # metodo construtor
-    def __init__(self):
+    # metodo que define a nossa classe
+    def __init__(self, att):
         self.meu_atributo = 'Ola Mundo'
+        self.meu_atributo2 = att
 
     def meu_metodo(self):  # o que vai entrar na minha classe, minha referencia
-        print('Estou no metodo!')
+        print(self.meu_atributo)
+        print(self.meu_atributo2)
 
     def meu_metodo2(self, num, mult):
         return num * mult
 
 
 # Instanciando o obj da minha classe
-objeto = MinhaClasse()
-result = objeto.meu_metodo2(3, 2)
-print(result)
+objeto = MinhaClasse(23)
+objeto.meu_metodo()
