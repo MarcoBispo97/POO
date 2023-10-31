@@ -21,3 +21,8 @@ class SistemaCadastral:
 
     def __indicar_erro(self) -> None:
         print('dados inválidos')
+
+
+sis = SistemaCadastral()
+sis.cadastrar('Marco', 26)
+sis.cadastrar('Marco', '26')
