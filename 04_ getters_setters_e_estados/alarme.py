@@ -7,7 +7,8 @@ class Alarme():
         return self.__estado
 
     def set_estado(self, valor: bool) -> None:
-        self._estado = valor
+        if isinstance(valor, bool):
+            self._estado = valor
 
 
 al = Alarme(False)
