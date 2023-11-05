@@ -1,17 +1,34 @@
+# O open close and principal
+# entradas diferentes deram acoes diferentes
 class Circo:
 
-    def apresentar(self, tipo):
-        if tipo == 1:
-            self.apresentar_malabarista()
-        if tipo == 2:
-            self.apresentar_palhaco()
+    def apresentar(self, apresentador: any):
+        apresentador.apresentar_show()
 
-    def apresentar_malabarista(self):
+    # def apresentar_malabarista(self):
+    #     print('Malabarista apresentando seu show')
+
+    # def apresentar_palhaco(self):
+    #     print('Palhaco apresentando seu show')
+
+
+class Malabarista:
+
+    def apresentar_show(self):
         print('Malabarista apresentando seu show')
 
-    def apresentar_palhaco(self):
-        print('Palhaco apresentando su show')
+
+class Palhaco:
+
+    def apresentar_show(self):
+        print('Palhaco apresentadno seu show')
 
 
 circo = Circo()
-circo.apresentar(2)
+malabarista = Malabarista()
+palhaco = Palhaco()
+
+circo.apresentar(malabarista)
+circo.apresentar(palhaco)
+
+# Conceiro de módulo aberto
