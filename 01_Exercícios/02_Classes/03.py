@@ -9,3 +9,23 @@
 # Idade: a idade do animal
 # Habitat: o habitat do animal
 # O programa também deve ter um método imprimir_dados() que imprima os dados do animal.
+
+class Animal():
+
+    def __init__(self, nome: str, especie: str, idade: int, habitat: str):
+        self.nome = nome
+        self.especie = especie
+        self.idade = idade
+        self.habitat = habitat
+
+    def imprimir_dados(self):
+        print(f"nome {self.nome}")
+        print(f"especie {self.especie}")
+        print(f"idade {self.idade}")
+        print(f"habitat {self.habitat}")
+
+
+Ganso = Animal('ganso', 'branco', 4, 'mata')
+Ganso.imprimir_dados()
+Elefante = Animal('Elefante', 'Africano', 80, 'Africa')
+Elefante.imprimir_dados()

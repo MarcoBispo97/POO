@@ -9,3 +9,22 @@
 # Ano: o ano de fabricação do carro
 # Placa: a placa do carro
 # O programa também deve ter um método imprimir_dados() que imprima os dados do carro.
+
+class Carro:
+    def __init__(self, cor: str, modelo: str, ano: int, placa: str):
+        self.cor = cor
+        self.modelo = modelo
+        self.ano = ano
+        self.placa = placa
+
+    def imprimir_carro(self):
+        print(f"Cor: {self.cor}")
+        print(f"Modelo: {self.cor}")
+        print(f"Ano: {self.cor}")
+        print(f"Placa: {self.cor}")
+
+
+celta = Carro('azul', 'celta', 2002, 'AB123')
+celta.imprimir_carro()
+chevete = Carro('preto', 'chevete', 1985, 'ABc1423')
+chevete.imprimir_carro()
